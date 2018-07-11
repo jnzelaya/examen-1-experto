@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HOME</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#"><img src="img/logo-facebook.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <form id="formulario-login" class="form-inline my-2 my-lg-0 ml-auto">
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Email or Phone">          
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+
+    <!--formulario-->
+    <div class="container">
+    	<div class="row" id="post">
+    		<div class="col-12 col-md-6 col-lg-4 col-xl-4">
+    			<form class="form-control tamaño">
+			  		<div class="font-weight-bold">
+			    		<label for="exampleInputEmail1">Agregar post</label>
+			    		<!--aqui va el combo-box-->
+			    		<select  class="form-control " id="datos" name="combo-box">
+			    			<option>jairo</option> <!-- este es un ejemplo-->
+			        	</select>
+			  		</div>
+			  		<div class="font-weight-bold mt-4">
+			    		<textarea placeholder="¿Que estas pensando?" class="form-control" name="texto" id = "pensamiento"></textarea>
+			 			<div class="valid-feedback">Es bien</div>
+                		<div class="invalid-feedback">Esta mal</div>
+			 		</div>
+			  		<div>
+					    <input class="form-control mt-4" type="date" name="date" id="fecha">
+			  			<div class="valid-feedback">Es bien</div>
+                		<div class="invalid-feedback">Esta mal</div>
+			  		</div>
+			  		<input class="btn btn-success mt-3" type="button" value="Sign Up" onclick="Registrarpost();">
+  				</form>
+			</div>
+    		
+    		<!--primer post
+    		<div class="col-12 col-md-6 col-lg-4 col-xl-4 bg-success" style='margin-top: 40px;'>
+    				<form class="form-control h-100">
+	    				<div class="font-weight-bold bg-primary mt-2">
+				  			<img src="img/profile.jpg" class="rounded-circle img-thumbnail" width="40" alt="">
+				    		<label for="exampleInputEmail1"></label>
+				  		</div>
+				  		<hr><div class="text-left pre-scrollable " style="height:250px;" >
+					  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 			
+				  		</div>
+				   </form>
+  			</div>
+				
+				<!--segundo post
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4">
+    			<form class="form-control tamaño">
+			  		<div class="font-weight-bold">
+			  			<img src="img/profile.jpg" class="rounded-circle img-thumbnail" width="40" alt="">
+			    		<label for="exampleInputEmail1"></label>
+			  		</div>
+			  		<hr>
+  				</form>
+  			</div>
+
+
+  				<!--tercer post
+	    		<div class="col-12 col-md-6 col-lg-4 col-xl-4">
+    			<form class="form-control tamaño">
+			  		<div class="font-weight-bold">
+			  			<img src="img/profile.jpg" class="rounded-circle img-thumbnail" width="40" alt="">
+			    		<label for="exampleInputEmail1"></label>
+			  		</div>
+			  		<hr>
+  				</form>
+  			</div>
+	  			
+	  			<!--cuarto post
+	    		<div class="col-12 col-md-6 col-lg-4 col-xl-4">
+    			<form class="form-control tamaño">
+			  		<div class="font-weight-bold">
+			  			<img src="img/profile.jpg" class="rounded-circle img-thumbnail" width="40" alt="">
+			    		<label for="exampleInputEmail1"></label>
+			  		</div>
+			  		<hr>
+  				</form>
+  			</div>
+    	</div>
+    </div>-->
+	
+	<script src="js/home.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/post.js" type="text/javascript" charset="utf-8" async defer></script>
+  	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
