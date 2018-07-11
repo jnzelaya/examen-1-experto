@@ -92,7 +92,7 @@ function Registrarpost(){
 
 function llenarlosPost(){
 
-    document.getElementById("post").innerHTML = "";
+    
     //Leer el objectstore de usuarios para imprimir la informacion, debe ser en este punto porque esta funcion se ejecuta si se abrio la BD correctamente
     var transaccion = db.transaction(["pensamientos"],"readonly");//readwrite: Escritura/lectura, readonly: Solo lectura
     var objectStorePost = transaccion.objectStore("pensamientos");
